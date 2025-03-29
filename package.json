@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon index.ts"
+    "watch": "nodemon index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -20,11 +21,17 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.0",
+    "pino": "^9.6.0",
+    "pino-elasticsearch": "^8.1.0",
+    "pino-http": "^10.4.0",
+    "pino-pretty": "^13.0.0",
+    "rotating-file-stream": "^3.2.6",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.0",
-    "@types/node": "^22.13.9"
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
   }
 }
