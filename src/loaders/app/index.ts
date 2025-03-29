@@ -4,7 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import { Server as SocketIOServer } from 'socket.io'; // Import Socket.IO
 import { makeResponse } from '../../lib';
-import { requestLogger } from '../../utils/logger/logger';
+// import { requestLogger } from ' ../../utils/logger/logger';
 
 const PORT = Number(process.env.PORT) || 3000;
 const HOST: string = String(process.env.HOST || '0.0.0.0');
@@ -85,7 +85,7 @@ export const appLoader = async (app: Express, router: any) => new Promise<any>(r
 
   app.use(morgan('dev'));
   
-  app.use(requestLogger);
+  // app.use(requestLogger);
 
   app.use('/api', router);
 
